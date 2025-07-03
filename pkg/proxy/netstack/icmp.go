@@ -1,4 +1,4 @@
-// Ligolo-ng
+// Pivot
 // Copyright (C) 2025 Nicolas Chatelain (nicocha30)
 
 // This program is free software: you can redistribute it and/or modify
@@ -125,7 +125,7 @@ func ProcessICMP(nstack *stack.Stack, pkt stack.PacketBufferPtr) {
 		return
 	}
 	h := header.ICMPv4(v)
-	// Ligolo-ng: not sure why, but checksum is invalid here.
+	// Pivot: not sure why, but checksum is invalid here.
 	/*
 		// Only do in-stack processing if the checksum is correct.
 		if checksum.Checksum(h, pkt.Data().Checksum()) != 0xffff {

@@ -1,4 +1,4 @@
-// Ligolo-ng
+// Pivot
 // Copyright (C) 2025 Nicolas Chatelain (nicocha30)
 
 // This program is free software: you can redistribute it and/or modify
@@ -28,7 +28,7 @@ type LigoloDecoder struct {
 	Payload interface{}
 }
 
-// NewDecoder decode Ligolo-ng packets
+// NewDecoder decode Pivot packets
 func NewDecoder(reader io.Reader) LigoloDecoder {
 	return LigoloDecoder{reader: reader}
 }

@@ -1,4 +1,4 @@
-// Ligolo-ng
+// Pivot
 // Copyright (C) 2025 Nicolas Chatelain (nicocha30)
 
 // This program is free software: you can redistribute it and/or modify
@@ -24,8 +24,8 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
-	"github.com/nicocha30/ligolo-ng/cmd/proxy/config"
-	"github.com/nicocha30/ligolo-ng/pkg/proxy/netinfo"
+	"github.com/lazytitan33/pivot/cmd/proxy/config"
+	"github.com/lazytitan33/pivot/pkg/proxy/netinfo"
 	"net"
 	"runtime"
 	"strconv"
@@ -37,9 +37,9 @@ import (
 	"github.com/hashicorp/yamux"
 	"github.com/jedib0t/go-pretty/v6/table"
 	"github.com/jedib0t/go-pretty/v6/text"
-	"github.com/nicocha30/ligolo-ng/pkg/controller"
-	"github.com/nicocha30/ligolo-ng/pkg/proxy"
-	"github.com/nicocha30/ligolo-ng/pkg/proxy/netstack"
+	"github.com/lazytitan33/pivot/pkg/controller"
+	"github.com/lazytitan33/pivot/pkg/proxy"
+	"github.com/lazytitan33/pivot/pkg/proxy/netstack"
 	"github.com/sirupsen/logrus"
 )
 

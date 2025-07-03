@@ -1,4 +1,4 @@
-// Ligolo-ng
+// Pivot
 // Copyright (C) 2025 Nicolas Chatelain (nicocha30)
 
 // This program is free software: you can redistribute it and/or modify
@@ -25,7 +25,7 @@ import (
 	"encoding/hex"
 	"flag"
 	"fmt"
-	"github.com/nicocha30/ligolo-ng/pkg/tlsutils"
+	"github.com/lazytitan33/pivot/pkg/tlsutils"
 	"net"
 	"net/http"
 	"net/url"
@@ -34,7 +34,7 @@ import (
 	"time"
 
 	"github.com/hashicorp/yamux"
-	"github.com/nicocha30/ligolo-ng/pkg/agent"
+	"github.com/lazytitan33/pivot/pkg/agent"
 	"github.com/sirupsen/logrus"
 	goproxy "golang.org/x/net/proxy"
 	"nhooyr.io/websocket"
@@ -61,9 +61,9 @@ func main() {
 	var versionFlag = flag.Bool("version", false, "show the current version")
 
 	flag.Usage = func() {
-		fmt.Printf("Ligolo-ng %s / %s / %s\n", version, commit, date)
+		fmt.Printf("Pivot %s / %s / %s\n", version, commit, date)
 		fmt.Println("Made in France with love by @Nicocha30!")
-		fmt.Println("https://github.com/nicocha30/ligolo-ng")
+		fmt.Println("https://github.com/lazytitan33/pivot")
 		fmt.Printf("\nUsage of %s:\n", os.Args[0])
 		flag.PrintDefaults()
 	}
@@ -71,7 +71,7 @@ func main() {
 	flag.Parse()
 
 	if *versionFlag {
-		fmt.Printf("Ligolo-ng %s / %s / %s\n", version, commit, date)
+		fmt.Printf("Pivot %s / %s / %s\n", version, commit, date)
 		return
 	}
 

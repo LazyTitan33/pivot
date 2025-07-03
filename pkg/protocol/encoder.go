@@ -1,4 +1,4 @@
-// Ligolo-ng
+// Pivot
 // Copyright (C) 2025 Nicolas Chatelain (nicocha30)
 
 // This program is free software: you can redistribute it and/or modify
@@ -27,7 +27,7 @@ type LigoloEncoder struct {
 	writer io.Writer
 }
 
-// NewEncoder encode Ligolo-ng packets
+// NewEncoder encode Pivot packets
 func NewEncoder(writer io.Writer) LigoloEncoder {
 	return LigoloEncoder{writer: writer}
 }

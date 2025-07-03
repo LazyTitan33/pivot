@@ -59,7 +59,7 @@ func (m *RWEndpoint) dispatchLoop() {
 			break
 		}
 		if n > int(m.mtu) {
-			// Not sure why it happens, discard packet - https://github.com/nicocha30/ligolo-ng/issues/54
+			// Not sure why it happens, discard packet - https://github.com/lazytitan33/pivot/issues/54
 			continue
 		}
 		if !m.IsAttached() {

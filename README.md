@@ -1,27 +1,27 @@
-# Ligolo-ng : Tunneling like a VPN
+# Pivot : Tunneling like a VPN
 
 ![Ligolo Logo](doc/logo.png)
 
 An advanced, yet simple, tunneling tool that uses TUN interfaces.
 
 [![GPLv3](https://img.shields.io/badge/License-GPLv3-brightgreen.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Go Report](https://goreportcard.com/badge/github.com/nicocha30/ligolo-ng)](https://goreportcard.com/report/github.com/nicocha30/ligolo-ng)
+[![Go Report](https://goreportcard.com/badge/github.com/lazytitan33/pivot)](https://goreportcard.com/report/github.com/lazytitan33/pivot)
 [![GitHub Sponsors](https://img.shields.io/github/sponsors/nicocha30)](https://github.com/sponsors/nicocha30)
-![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/nicocha30/ligolo-ng/total)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/lazytitan33/pivot/total)
 
-[📑 Ligolo-ng Documentation (Setup/Quickstart)](https://docs.ligolo.ng/)
+[📑 Pivot Documentation (Setup/Quickstart)](https://docs.ligolo.ng/)
 
 > [!TIP]
-> Ligolo-ng 0.8 added a lot of new features, including:
+> Pivot 0.8 added a lot of new features, including:
 > - 🌐 API and a beautiful Web Interface thanks to [L'ami du Raisin](https://github.com/jeremiebedjai), allowing **multiplayer**!
 > - ⚙️ Simple configuration file, to keep your tunneling/proxy settings
-> - 🚦 **Daemon mode**, to run Ligolo-ng as a service
+> - 🚦 **Daemon mode**, to run Pivot as a service
 > - 🔗 Auto-bind, to **automatically configure tunneling** whenever a specific agent connects
 > - 📶 Easy and automatic (autoroute) route and interface management on **Windows, Linux, MacOS and BSD**!
 > - 💀 Agent kill, to remotely terminate an agent
 >
 > Please try it out! 
-> [Release: Ligolo-ng 0.8](https://github.com/nicocha30/ligolo-ng/releases/tag/v0.8)
+> [Release: Pivot 0.8](https://github.com/lazytitan33/pivot/releases/tag/v0.8)
 > 
 > ![Ligolo Web](doc/webui.png)
 
@@ -46,7 +46,7 @@ An advanced, yet simple, tunneling tool that uses TUN interfaces.
 
 ## Introduction
 
-**Ligolo-ng** is a *simple*, *lightweight* and *fast* tool that allows pentesters to establish
+**Pivot** is a *simple*, *lightweight* and *fast* tool that allows pentesters to establish
 tunnels from a reverse TCP/TLS connection using a **tun interface** (without the need of SOCKS).
 
 ## Features
@@ -66,11 +66,11 @@ tunnels from a reverse TCP/TLS connection using a **tun interface** (without the
 
 ## Demo
 
-[Ligolo-ng-demo.webm](https://github.com/nicocha30/ligolo-ng/assets/31402213/3070bb7c-0b0d-4c77-9181-cff74fb2f0ba)
+[Pivot-demo.webm](https://github.com/lazytitan33/pivot/assets/31402213/3070bb7c-0b0d-4c77-9181-cff74fb2f0ba)
 
 ## How is this different from Ligolo/Chisel/Meterpreter... ?
 
-Instead of using a SOCKS proxy or TCP/UDP forwarders, **Ligolo-ng** creates a userland network stack using [Gvisor](https://gvisor.dev/).
+Instead of using a SOCKS proxy or TCP/UDP forwarders, **Pivot** creates a userland network stack using [Gvisor](https://gvisor.dev/).
 
 When running the *relay/proxy* server, a **tun** interface is used, packets sent to this interface are
 translated, and then transmitted to the *agent* remote network.
@@ -86,7 +86,7 @@ This allows running tools like *nmap* without the use of *proxychains* (simpler 
 
 ## How to use - documentation - tutorial
 
-You will find the documentation for Ligolo-ng, as well as the steps to follow to get it up and running on the [Ligolo-ng Documentation](https://docs.ligolo.ng/)
+You will find the documentation for Pivot, as well as the steps to follow to get it up and running on the [Pivot Documentation](https://docs.ligolo.ng/)
 
 ## Does it require Administrator/root access ?
 
@@ -140,4 +140,4 @@ When using *nmap*, you should use `--unprivileged` or `-PE` to avoid false posit
 ## Credits
 
 - Nicolas Chatelain <nicolas -at- chatelain.me>
-- Jeremie Bedjai (Ligolo-ng-Web)
+- Jeremie Bedjai (Pivot-Web)

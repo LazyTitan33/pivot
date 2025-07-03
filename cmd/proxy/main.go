@@ -1,4 +1,4 @@
-// Ligolo-ng
+// Pivot
 // Copyright (C) 2025 Nicolas Chatelain (nicocha30)
 
 // This program is free software: you can redistribute it and/or modify
@@ -19,8 +19,8 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/nicocha30/ligolo-ng/cmd/proxy/config"
-	"github.com/nicocha30/ligolo-ng/pkg/tlsutils"
+	"github.com/lazytitan33/pivot/cmd/proxy/config"
+	"github.com/lazytitan33/pivot/pkg/tlsutils"
 	"log"
 	"os"
 	"runtime"
@@ -29,8 +29,8 @@ import (
 
 	"github.com/desertbit/grumble"
 	"github.com/hashicorp/yamux"
-	"github.com/nicocha30/ligolo-ng/cmd/proxy/app"
-	"github.com/nicocha30/ligolo-ng/pkg/controller"
+	"github.com/lazytitan33/pivot/cmd/proxy/app"
+	"github.com/lazytitan33/pivot/pkg/controller"
 	"github.com/sirupsen/logrus"
 )
 
@@ -58,9 +58,9 @@ func main() {
 	var memprofile = flag.String("memprofile", "", "write memory profile to `file`")
 
 	flag.Usage = func() {
-		fmt.Printf("Ligolo-ng %s / %s / %s\n", version, commit, date)
+		fmt.Printf("Pivot %s / %s / %s\n", version, commit, date)
 		fmt.Println("Made in France with love by @Nicocha30!")
-		fmt.Println("https://github.com/nicocha30/ligolo-ng")
+		fmt.Println("https://github.com/lazytitan33/pivot")
 		fmt.Printf("\nUsage of %s:\n", os.Args[0])
 		flag.PrintDefaults()
 	}
@@ -81,7 +81,7 @@ func main() {
 	config.InitConfig(*configFile)
 
 	if *versionFlag {
-		fmt.Printf("Ligolo-ng %s / %s / %s\n", version, commit, date)
+		fmt.Printf("Pivot %s / %s / %s\n", version, commit, date)
 		return
 	}
 
@@ -179,7 +179,7 @@ func main() {
 	}
 
 	if config.Config.GetBool("web.enabled") {
-		logrus.Infof("Starting Ligolo-ng Web, API URL is set to: %s", app.GetAPIUrl())
+		logrus.Infof("Starting Pivot Web, API URL is set to: %s", app.GetAPIUrl())
 		go app.StartLigoloApi()
 	}
 

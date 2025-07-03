@@ -1,4 +1,4 @@
-// Ligolo-ng
+// Pivot
 // Copyright (C) 2025 Nicolas Chatelain (nicocha30)
 
 // This program is free software: you can redistribute it and/or modify
@@ -23,11 +23,11 @@ import (
 
 // App is used to register the grumble
 var App = grumble.New(&grumble.Config{
-	Name:                  "ligolo-ng",
-	Description:           "Ligolo-ng - An advanced, yet simple tunneling tool",
+	Name:                  "pivot",
+	Description:           "Pivot - An advanced, yet simple tunneling tool",
 	HelpHeadlineUnderline: true,
 	HelpSubCommands:       true,
-	HistoryFile:           "ligolo-ng.history",
+	HistoryFile:           "pivot.history",
 })
 
 func ask(question string) bool {

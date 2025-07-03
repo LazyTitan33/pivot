@@ -4,7 +4,7 @@
 package tun
 
 import (
-	"github.com/nicocha30/ligolo-ng/pkg/proxy/netinfo"
+	"github.com/lazytitan33/pivot/pkg/proxy/netinfo"
 	"golang.zx2c4.com/wireguard/tun"
 )
 

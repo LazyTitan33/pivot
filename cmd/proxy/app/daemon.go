@@ -1,4 +1,4 @@
-// Ligolo-ng
+// Pivot
 // Copyright (C) 2025 Nicolas Chatelain (nicocha30)
 
 // This program is free software: you can redistribute it and/or modify
@@ -21,10 +21,10 @@ import (
 	"github.com/gin-contrib/cors"
 	"github.com/gin-contrib/static"
 	"github.com/gin-gonic/gin"
-	"github.com/nicocha30/ligolo-ng/cmd/proxy/config"
-	"github.com/nicocha30/ligolo-ng/pkg/proxy/netinfo"
-	"github.com/nicocha30/ligolo-ng/pkg/tlsutils"
-	"github.com/nicocha30/ligolo-ng/web"
+	"github.com/lazytitan33/pivot/cmd/proxy/config"
+	"github.com/lazytitan33/pivot/pkg/proxy/netinfo"
+	"github.com/lazytitan33/pivot/pkg/tlsutils"
+	"github.com/lazytitan33/pivot/web"
 	"github.com/sirupsen/logrus"
 	"io"
 	"net/http"
@@ -86,7 +86,7 @@ func StartLigoloApi() {
 	} else {
 		gin.SetMode(gin.ReleaseMode)
 	}
-	logrus.Warn("Ligolo-ng API is experimental, and should be running behind a reverse-proxy if publicly exposed.")
+	logrus.Warn("Pivot API is experimental, and should be running behind a reverse-proxy if publicly exposed.")
 
 	if config.Config.GetString("web.logfile") != "" {
 		f, err := os.Create(config.Config.GetString("web.logfile"))

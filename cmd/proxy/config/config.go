@@ -1,4 +1,4 @@
-// Ligolo-ng
+// Pivot
 // Copyright (C) 2025 Nicolas Chatelain (nicocha30)
 
 // This program is free software: you can redistribute it and/or modify
@@ -170,7 +170,7 @@ func ask(question string) bool {
 func InitConfig(configFile string) {
 	var firstStart bool
 	if configFile == "" {
-		configFile = "ligolo-ng.yaml"
+		configFile = "pivot.yaml"
 	} else {
 		if _, err := os.Stat(configFile); errors.Is(err, os.ErrNotExist) {
 			logrus.Fatal("config file does not exist")
@@ -201,7 +201,7 @@ func InitConfig(configFile string) {
 	}
 
 	if firstStart {
-		enableWebUI := ask("Enable Ligolo-ng WebUI?")
+		enableWebUI := ask("Enable Pivot WebUI?")
 		Config.SetDefault("web.enabled", enableWebUI)
 		Config.SetDefault("web.enableui", enableWebUI)
 
@@ -211,7 +211,7 @@ func InitConfig(configFile string) {
 			} else {
 				Config.SetDefault("web.corsAllowedOrigin", []string{"http://127.0.0.1:8080"})
 			}
-			logrus.Warn("WebUI enabled, default username and login are ligolo:password - make sure to update ligolo-ng.yaml to change credentials!")
+			logrus.Warn("WebUI enabled, default username and login are ligolo:password - make sure to update pivot.yaml to change credentials!")
 		}
 	} else {
 		Config.SetDefault("web.enabled", false)

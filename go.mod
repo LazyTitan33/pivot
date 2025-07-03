@@ -1,4 +1,4 @@
-module github.com/nicocha30/ligolo-ng
+module github.com/lazytitan33/pivot
 
 go 1.23.0
 

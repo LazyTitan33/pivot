@@ -1,4 +1,4 @@
-// Ligolo-ng
+// Pivot
 // Copyright (C) 2025 Nicolas Chatelain (nicocha30)
 
 // This program is free software: you can redistribute it and/or modify
@@ -20,7 +20,7 @@ import (
 	"context"
 	"crypto/tls"
 	"errors"
-	"github.com/nicocha30/ligolo-ng/pkg/tlsutils"
+	"github.com/lazytitan33/pivot/pkg/tlsutils"
 	"github.com/sirupsen/logrus"
 	"net"
 	"net/http"
@@ -94,7 +94,7 @@ func (c *Controller) ListenAndServe() {
 		}
 		err = s.Serve(listener)
 	} else {
-		//direct listen with legacy ligolo-ng protocol
+		//direct listen with legacy pivot protocol
 		listener, err := tls.Listen(c.Network, c.Address, c.tlsConfig)
 		if err != nil {
 			c.startchan <- err

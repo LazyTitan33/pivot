@@ -1,4 +1,4 @@
-// Ligolo-ng
+// Pivot
 // Copyright (C) 2025 Nicolas Chatelain (nicocha30)
 
 // This program is free software: you can redistribute it and/or modify
@@ -22,8 +22,8 @@ import (
 	"net"
 
 	"github.com/hashicorp/yamux"
-	"github.com/nicocha30/ligolo-ng/pkg/protocol"
-	"github.com/nicocha30/ligolo-ng/pkg/proxy"
+	"github.com/lazytitan33/pivot/pkg/protocol"
+	"github.com/lazytitan33/pivot/pkg/proxy"
 )
 
 type LigoloAgent struct {

@@ -1,4 +1,4 @@
-// Ligolo-ng
+// Pivot
 // Copyright (C) 2025 Nicolas Chatelain (nicocha30)
 
 // This program is free software: you can redistribute it and/or modify
@@ -18,8 +18,8 @@ package web
 
 import "embed"
 
-//go:generate npm install -C ligolo-ng-web
-//go:generate npm run build-ligolo -C ligolo-ng-web
+//go:generate npm install -C pivot-web
+//go:generate npm run build-ligolo -C pivot-web
 
 //go:embed dist
 var LigoloWebFS embed.FS

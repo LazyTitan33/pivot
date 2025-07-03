@@ -1,4 +1,4 @@
-// Ligolo-ng
+// Pivot
 // Copyright (C) 2025 Nicolas Chatelain (nicocha30)
 
 // This program is free software: you can redistribute it and/or modify
@@ -19,7 +19,7 @@ package config
 import (
 	"fmt"
 	"github.com/jedib0t/go-pretty/v6/text"
-	"github.com/nicocha30/ligolo-ng/pkg/proxy/netinfo"
+	"github.com/lazytitan33/pivot/pkg/proxy/netinfo"
 	"slices"
 	"strings"
 )

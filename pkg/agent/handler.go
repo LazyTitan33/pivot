@@ -1,4 +1,4 @@
-// Ligolo-ng
+// Pivot
 // Copyright (C) 2025 Nicolas Chatelain (nicocha30)
 
 // This program is free software: you can redistribute it and/or modify
@@ -29,10 +29,10 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/nicocha30/ligolo-ng/pkg/agent/neterror"
-	"github.com/nicocha30/ligolo-ng/pkg/agent/smartping"
-	"github.com/nicocha30/ligolo-ng/pkg/protocol"
-	"github.com/nicocha30/ligolo-ng/pkg/relay"
+	"github.com/lazytitan33/pivot/pkg/agent/neterror"
+	"github.com/lazytitan33/pivot/pkg/agent/smartping"
+	"github.com/lazytitan33/pivot/pkg/protocol"
+	"github.com/lazytitan33/pivot/pkg/relay"
 	"github.com/sirupsen/logrus"
 )
 

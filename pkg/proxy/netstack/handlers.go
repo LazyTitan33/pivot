@@ -1,4 +1,4 @@
-// Ligolo-ng
+// Pivot
 // Copyright (C) 2025 Nicolas Chatelain (nicocha30)
 
 // This program is free software: you can redistribute it and/or modify
@@ -21,6 +21,8 @@ import (
 	"net"
 
 	"github.com/hashicorp/yamux"
+	"github.com/lazytitan33/pivot/pkg/protocol"
+	"github.com/lazytitan33/pivot/pkg/relay"
 	"github.com/nicocha30/gvisor-ligolo/pkg/tcpip"
 	"github.com/nicocha30/gvisor-ligolo/pkg/tcpip/adapters/gonet"
 	"github.com/nicocha30/gvisor-ligolo/pkg/tcpip/header"
@@ -29,8 +31,6 @@ import (
 	"github.com/nicocha30/gvisor-ligolo/pkg/tcpip/transport/tcp"
 	"github.com/nicocha30/gvisor-ligolo/pkg/tcpip/transport/udp"
 	"github.com/nicocha30/gvisor-ligolo/pkg/waiter"
-	"github.com/nicocha30/ligolo-ng/pkg/protocol"
-	"github.com/nicocha30/ligolo-ng/pkg/relay"
 	"github.com/sirupsen/logrus"
 )
 
